@@ -25,7 +25,7 @@
     <h2><center>Research Experience</center></h2>
     <h3><center>UMD Collective Dynamics and Control Laboratory</center></h3>
     <center><img src="../images/fish.JPG" alt="fish" width = "300"/></center>
-    <p><center>I'm currently working on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
+    <p><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
         vortexes coming off of the surrounding fish, reducing drag and therefore reducing energy spent to move a given distance. It's already been shown that this is possible for robotic fish (see Liang et al at the bottom of the page), so the challenge is getting the fish to actually move in the right formation. Using 2 fish held one behind the other, this requires not only knowing the distance from the front fish to the rear, but for the rear fish to know how fast the leader fish is
         flapping, along with a phase shift from a zero point in time of the leader's flapping so that the follower can synchronize its movement with the leader. We're using a monocular camera on the follower fish to do this, which is what my work has been on. I've been writing the computer vision software using OpenCV in Python to get these guidance parameters. I've already gotten the guidance data with the follower fish flapping on a duty cycle (alternating one second flapping, one second coasting and
         recording video), and I'm still working on having it work with the follower constantly flapping so that it doesn't have to coast at all.
@@ -34,11 +34,25 @@
     
     <h3><center>Balloon Payload Program</center></h3>
     <center><img src="../images/bpp.jpg" alt="Bpp" width="150"/></center>
-    <p><center>Tony is a member of the Univeristy of Maryland Balloon Payload Program (BPP), a student-run club that launches high altitude weather balloons carrying various payloads. He is currently the project lead on a payload called PTERODACTYL, a sensor suite planned to launch during the October 2023 and April 2024 solar eclipse. Additionally, he helps out on the launchpad during launches with inflating the balloons from high-pressure helium tanks.</center></p>
+    <p><center>Tony is a member of the Univeristy of Maryland Balloon Payload Program (BPP), a student-run club that launches high altitude weather balloons carrying various payloads.</center></p>
+    <h4><center>BPP Projects</center></h4>
+    <center><table>
+        <tr>
+            <th>Pterodactyl</th>
+            <th>Inflation</th>
+            <th>Command</th>
+        </tr>
+        <tr>
+            <td>Tony is the payload lead on Pterodactyl, a payload sent to the UMD BPP by the Nationwide Eclipse Ballooning Project (NEBP). The NEBP is a country-wide NASA-supported project that has gathered over 70 teams to launch scientific balloons during the 2023 and 2024 solar eclipses. 
+                Pterodactyl is a sensor suite designed by Montana State University that carries various atmospheric sensors (GPS, thermometer, accelerometer, magnetometer, and pressure sensor) with the goal of tracking atmospheric gravity waves across the country during the eclipse. </td>
+            <td>During launches, Tony helps out on the pad by filling balloons from high-pressure helium tanks.</td>
+            <td>Tony is currently redesigning the structure of our Command payload which houses our main method of tracking our balloon. It sends GPS tracking data over the Automated Packet Reporting System (APRS), an amateur radio protocol that uses recievers all across the country to collect packets from 
+                devices and gather them onto publicly-available tracking websites like aprs.fi
+            </td>
+        </tr>
+    </table></center>
+    
         
 
 </html>
 
-<p><center>    
-    <a href="sub/projects.html">Personal Projects</a>
-</center></p>
