@@ -2,16 +2,19 @@
 <html>
 
 <head>
-    <title>Tony Regli</title>
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="iamges/favicon-16x16.png" sizes="16x16" />
+    <title>Tony Regli | Home</title>
     <style>
         body {
             background-color: #c1e9ed;
         }
-        table.PerformanceTable {
+        table.table1 {
             table-layout: fixed;
             width: 100%;
+            border: 1px solid black;
+        }
+        table.table2 {
+            table-layout: fixed;
+            width: 50%;
             border: 1px solid black;
         }
         </style>
@@ -22,24 +25,34 @@
 
     <center><img src="../images/headshot.jpg" alt="Face" width = "150"/></center>
     <h1><center>Tony Regli</center></h1>
-    <p><center>Tony Regli is a sophomore studying aerospace engineering at the University of Maryland: College Park. His research interests include human factors engineering for flight and using computer vision and AI to control aerospace systems.</center></p>
+    <center><table class = "table2">
+        <tr>
+            <th><center>Tony Regli is a sophomore studying aerospace engineering at the University of Maryland: College Park. His research interests include human factors engineering for flight and using computer vision and AI to control aerospace systems.
+            </center></th>
+        </tr>
+    </table></center>
+
 
     
     <h2><center>Research Experience</center></h2>
     <h3><center>UMD Collective Dynamics and Control Laboratory</center></h3>
     <center><img src="../images/fish.JPG" alt="fish" width = "300"/></center>
-    <p><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
-        vortexes coming off of the surrounding fish, reducing drag and therefore reducing energy spent to move a given distance. It's already been shown that this is possible for robotic fish (see Liang et al at the bottom of the page), so the challenge is getting the fish to actually move in the right formation. Using 2 fish held one behind the other, this requires not only knowing the distance from the front fish to the rear, but for the rear fish to know how fast the leader fish is
-        flapping, along with a phase shift from a zero point in time of the leader's flapping so that the follower can synchronize its movement with the leader. We're using a monocular camera on the follower fish to do this, which is what my work has been on. I've been writing the computer vision software using OpenCV in Python to get these guidance parameters. I've already gotten the guidance data with the follower fish flapping on a duty cycle (alternating one second flapping, one second coasting and
-        recording video), and I'm still working on having it work with the follower constantly flapping so that it doesn't have to coast at all.
-    </center></p>
+    <center><table class = "table2">
+        <tr>
+            <th><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
+                vortexes coming off of the surrounding fish, reducing drag and therefore reducing energy spent to move a given distance. It's already been shown that this is possible for robotic fish (see Liang et al at the bottom of the page), so the challenge is getting the fish to actually move in the right formation. Using 2 fish held one behind the other, this requires not only knowing the distance from the front fish to the rear, but for the rear fish to know how fast the leader fish is
+                flapping, along with a phase shift from a zero point in time of the leader's flapping so that the follower can synchronize its movement with the leader. We're using a monocular camera on the follower fish to do this, which is what my work has been on. I've been writing the computer vision software using OpenCV in Python to get these guidance parameters. I've already gotten the guidance data with the follower fish flapping on a duty cycle (alternating one second flapping, one second coasting and
+                recording video), and I'm still working on having it work with the follower constantly flapping so that it doesn't have to coast at all.
+            </center></th>
+        </tr>
+    </table></center>
 
     
     <h3><center>Balloon Payload Program</center></h3>
     <center><img src="../images/bpp.jpg" alt="Bpp" width="150"/></center>
     <p><center>Tony is a member of the Univeristy of Maryland Balloon Payload Program (BPP), a student-run club that launches high altitude weather balloons carrying various payloads.</center></p>
     <h4><center>BPP Projects</center></h4>
-    <center><table>
+    <center><table class = "table1">
         <tr>
             <th><center>Pterodactyl</center></th>
             <th><center>Inflation</center>></th>
