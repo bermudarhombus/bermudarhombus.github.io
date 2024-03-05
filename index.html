@@ -8,8 +8,12 @@
             background-color: #c1e9ed;
         }
         table.table1 {
+            border-collapse:collapse;
             table-layout: fixed;
             width: 100%;
+            border: 1px solid black;
+        }
+        td.table1{
             border: 1px solid black;
         }
         table.table2 {
@@ -27,8 +31,8 @@
     <h1><center>Tony Regli</center></h1>
     <center><table class = "table2">
         <tr>
-            <th><center>Tony Regli is a sophomore studying aerospace engineering at the University of Maryland: College Park. His research interests include human factors engineering for flight and using computer vision and AI to control aerospace systems.
-            </center></th>
+            <td><center>Tony Regli is a sophomore studying aerospace engineering at the University of Maryland: College Park. His research interests include human factors engineering for flight and using computer vision and AI to control aerospace systems.
+            </center></td>
         </tr>
     </table></center>
 
@@ -39,11 +43,11 @@
     <center><img src="../images/fish.JPG" alt="fish" width = "300"/></center>
     <center><table class = "table2">
         <tr>
-            <th><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
+            <td><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
                 vortexes coming off of the surrounding fish, reducing drag and therefore reducing energy spent to move a given distance. It's already been shown that this is possible for robotic fish (see Liang et al at the bottom of the page), so the challenge is getting the fish to actually move in the right formation. Using 2 fish held one behind the other, this requires not only knowing the distance from the front fish to the rear, but for the rear fish to know how fast the leader fish is
                 flapping, along with a phase shift from a zero point in time of the leader's flapping so that the follower can synchronize its movement with the leader. We're using a monocular camera on the follower fish to do this, which is what my work has been on. I've been writing the computer vision software using OpenCV in Python to get these guidance parameters. I've already gotten the guidance data with the follower fish flapping on a duty cycle (alternating one second flapping, one second coasting and
                 recording video), and I'm still working on having it work with the follower constantly flapping so that it doesn't have to coast at all.
-            </center></th>
+            </center></td>
         </tr>
     </table></center>
 
