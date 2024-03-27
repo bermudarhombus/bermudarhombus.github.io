@@ -135,9 +135,11 @@
             <td><center> I modelled, laser-cut, and assembled this custom electric guitar out of sheets of purpleheart and red cedar wood. It was a really interesting challenge and was one of my first experiences with CAD/CAM beyond simple 3D printing. In addition to custom standard guitar electronics, it has a MIDI touchpad 
                 in the body of the guitar that can connect to an effects controller, allowing for precision control of various sound effects like high/low pass filters and overdrive. </center></td>
             <td><center>During launches, I help out on the pad by filling balloons from high-pressure helium tanks. I train people on safe practice when moving tanks and on how to properly regulate helium flow into the balloon during inflation.</center></td>
-            <td><center> I designed, machined, and wired a custom game controller for the spaceflight simulator Kerbal Space Programl, using an Arduino to handle digital and analog inputs, and relaying them to the game through an Arduino library specifically designed for custom Kerbal Space Program control panels like this one.
-                I did my best to model it after the control panels found in Apollo-era NASA spacecraft, as I find that era of interface design to be very visually appealing. In addition to inputs, there are lights on the panel that will respond to certain situations
-                like lowering landing gear or preparing to abort.</center></td>
+            <td><center> I designed, machined, and wired a custom game controller for the spaceflight simulator Kerbal Space Program, using an Arduino to handle digital and analog inputs. Kerbal Space Program is a spaceflight simulator that 
+                allows you to design and fly custom rockets throuhg a solar system using patched-conic orbit approximation that provide a fairly accurate, though simplistic model of interplanetary spaceflight.
+                I've always been a huge fan of this game, and I thought it would be fun to have a large control panel for it inspired by Apollo-era NASA control panels. The top sheet is annodized aluminum with labels 
+                lasercut into the surface, and the rest of the case is high-density plastic. It has LEDs that will light up corresponding to specific in-game actions like lowering your landing gear or preparing to 
+                abort. It was a really fun project and a great way to get better at soldering and Arduino code.</center></td>
         </tr>
         <tr>
             <th><center>Orbital Modeling in Matlab</center></th>
@@ -147,6 +149,18 @@
                 <source src="3body.mp4" type="video/mp4"></center></td>
             <td><center><video width="320" height="240" autoplay>
                 <source src="3d!.mp4" type="video/mp4"></center></td>
+        </tr>
+        <tr>
+            <td><center>I've been working on modeling orbital simulations in Matlab, this started as a brief idea when I was bored on a Saturday and thought it might be fun to make a 2D n-body 
+                orbit propagator. Doing this in 2D didn't take me very long, so I modified it to work in 3D and realized that from here it likely wouldn't be that difficult to create a program
+                that can take Keplerian orbital elements and model the corresponding orbit. This only took a few days, so then I thought it might be fun to try to model orbital maneuvers (I wanted
+                to make something akin to Kerbal Space Program). I don't know if fun is the right word for this. Implementing maneuvers required an order of magnitude more effort than the other
+                tasks, but I got it working. The program allows you to create a parent body of a specific mass and then create satellites by inputing Keplerian orbital elements. Then, by calling a 
+                burn function for a specific satellite, you can input a delta-v vector and the satellite will change its orbit accordingly. Now that I'm able to model instantaneous velocity changes,
+                I have a few other goals in mind. First, I want to create a function that will calculate ideal transfer burns to go between orbits. Additionally, I want the simulation to be able to model
+                non-elliptical orbits, as currently it cannot handle anything going above escape velocity. Lastly, I think creating a function that can calculate rendevous burns would be a really fun 
+                challenge, but that's definitely a long ways away.
+            </center></td>
         </tr>
     </table></center>
     <br>
@@ -158,6 +172,6 @@
             <td><center>linkedin.com/in/tregli</center></td>
         </tr>
     </table></center>
-    <center><p>Last Updated March 4, 2024</p></center>
+    <center><p>Last Updated March 27, 2024</p></center>
 </html>
 
