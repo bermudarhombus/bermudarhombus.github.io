@@ -41,7 +41,14 @@ section {
 section h1{
   color: #013145;
   font-size: 1.5rem;
-  margin: 10px;
+  margin: 0;
+}
+
+.aboutH1{
+  color: #013145;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  margin: 20px;
 }
 
 section h2 {
@@ -74,7 +81,7 @@ img{
 
 
 .rightHalf{
-  width: 50%;
+  width: 40%;
 }
 
 .rightHalf img{
