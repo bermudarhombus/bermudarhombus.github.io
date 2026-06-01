@@ -11,6 +11,7 @@
 body {
   font-family: DejavuCustom, Roboto, sans-serif;
   font-style: normal;
+  font-size: 20px;
   margin: 0;
   background: #f4f7fb;
   color: #253238;
@@ -26,7 +27,7 @@ header {
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 section {
@@ -35,6 +36,11 @@ section {
   padding: 24px;
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+section h1{
+  color: #013145;
+  font-size: 1.2rem;
 }
 
 section h2 {
@@ -49,6 +55,20 @@ footer {
   font-size: 0.9rem;
 }
 
+section{
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+}
+
+
+.rightHalf{
+  width: 55%;
+}
+
+.leftHalf{
+  width:40%;
+}
 
 
 ul.headerList {
@@ -72,7 +92,7 @@ ul.headerList li {
 ul.headerList li a {
   display: block;
   color: #FFFFFF;
-  padding: 8px 30px;
+  padding: 10px 30px;
   text-decoration: none;
   transition: background-color 0.2s ease;
 }
