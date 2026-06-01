@@ -40,8 +40,8 @@ section {
 
 section h1{
   color: #013145;
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.5rem;
+  margin: 10px;
 }
 
 section h2 {
@@ -58,9 +58,12 @@ footer {
 }
 
 section{
-  display: flex;
-  gap: 40px;
   overflow: hidden;
+}
+
+.sectionBody{
+  display: flex;
+  gap: 20px;
 }
 
 img{
@@ -71,7 +74,7 @@ img{
 
 
 .rightHalf{
-  width: 55%;
+  width: 50%;
 }
 
 .rightHalf img{
@@ -81,7 +84,7 @@ img{
 }
 
 .leftHalf{
-  width:40%;
+  width:50%;
 }
 
 .leftHalf img{
