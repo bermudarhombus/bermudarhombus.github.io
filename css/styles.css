@@ -18,7 +18,7 @@ body {
 
 header {
   color: #fff; /* change color of text */
-  padding: 10px 100px; /* first number is distance of text from top */
+  padding: 0px 0px 20px 0px; /* first number is distance of text from top */
   text-align: center;
 }
 
