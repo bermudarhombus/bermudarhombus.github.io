@@ -84,6 +84,11 @@ img{
   width:40%;
 }
 
+.leftHalf img{
+  width:100%;
+  height:auto;
+  display:block;
+}
 
 ul.headerList {
   width: 100%;
