@@ -19,6 +19,7 @@ body {
 header {
   color: #fff; /* change color of text */
   padding: 0px 0px 20px 0px; /* first number is distance of text from top */
+  margin: 0;
   text-align: center;
 }
 
@@ -51,8 +52,6 @@ footer {
 
 
 ul.headerList {
-  position: fixed;
-  top: 0;
   width: 100%;
   list-style-type: none;
   font-size: 20px;
@@ -61,6 +60,8 @@ ul.headerList {
   background-color: #013145;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 ul.headerList li {
@@ -71,7 +72,7 @@ ul.headerList li {
 ul.headerList li a {
   display: block;
   color: #FFFFFF;
-  padding: 8px 24px;
+  padding: 8px 30px;
   text-decoration: none;
   transition: background-color 0.2s ease;
 }
