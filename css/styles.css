@@ -41,10 +41,12 @@ section {
 section h1{
   color: #013145;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 section h2 {
   margin-top: 0;
+  font-size: 1.1rem;
   color: #013145;
 }
 
@@ -62,7 +64,7 @@ section{
 }
 
 img{
-  max-width: 100;
+  max-width: 100%;
   height: auto;
   display: block;
 }
