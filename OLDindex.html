@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tony Regli</title>
+<h1><center>Under Construction</center></h1>
+  <!--  <title>Tony Regli | Home</title>
+    <style>
+        body {
+            background-color: #c1e9ed;
+        }
+        table.table1 {
+            border-collapse:collapse;
+            table-layout: fixed;
+            width: 90%;
+            border: 3px solid black;
+        }
+        table.table1 td{
+            border: 1px solid black;
+        }
+        table.table1 th{
+            border: 1px solid black;
+        }
+        table.table1 img{
+            border: 1px solid black;
+            max-width: 80%;
+            height: auto;
+        }
+
+        table.table2 {
+            border-collapse:collapse;
+            table-layout: fixed;
+            width: 80%;
+            border: 3px solid black;
+        }
+        table.table2 td{
+            border: 1px solid black;
+        }
+        table.table2 th{
+            border: 1px solid black;
+        }
+
+        table.about{
+            table-layout: fixed;
+            width: 50%;
+        }
+        table.about th{
+            font-size: 50
+        }
+
+        table.footer {
+            border-collapse:collapse;
+            table-layout: fixed;
+            width: 30%;
+            border: 3px solid black;
+        }
+        table.footer td{
+            border: 1px solid black;
+        }
+        </style>
+</head>
+
+
+<body>
+    <h1><center>Tony Regli</center></h1>
+    <h2><center>About</center></h2>
+    <center><table class = "about">
+            <td>Tony Regli is a senior pursuing a double degree in Aerospace Engineering and Mathematics and the 
+                University of Maryland: College Park.
+                
+                
+                I am a sophomore studying aerospace engineering at the University of Maryland: College Park. Ever since 
+                watching footage of the moon landing as a kid, I've always been fascinated by aerospace.
+                As I grew up I became more and more involved in stem, first through programming classes in elementary school
+                and eventually through FIRST Robotics in high school. <br><br>
+                Since reaching arriving at the University of Maryland, I've been active in a variety of both STEM and 
+                non-STEM activities, including the UMD Balloon Payload Program, on campus research with the 
+                Collective Dynamics and Control Laboratory, and juggling club.<br><br>
+                My current research focuses on applying computer vision to complex aerospace problems. Additionally,
+                I am interested in the application of human factors engineering to aerospace systems, and electric propulsion
+                research.</td>
+            <td><center><img src="../images/headshot.jpg" alt="Face" width = "300"/></center></td>
+        <tr>
+
+        </tr>
+    </table></center>
+    
+    <h2><center>Research Experience</center></h2>
+    <h3><center>UMD Collective Dynamics and Control Laboratory</center></h3>
+    <center><table class = "table2">
+        <tr>
+            <td><center>Over the summer of 2023, I worked on using computer vision to provide real-time guidance and tracking information to allow 2 robotic fish to swim in formation, syncing their motion to give hydrodynamic benefits to the follower fish through a technique that real fish use called vortex phase matching. Vortex phase matching is something live fish in schools do, by positioning themselves precisely with respect to the other fish in their swarm, they're able to take advantage of the 
+                vortexes coming off of the surrounding fish, reducing drag and therefore reducing energy spent to move a given distance. It's already been shown that this is possible for robotic fish, so the challenge is getting the fish to actually move in the right formation. Using 2 fish held one behind the other, this requires not only knowing the distance from the front fish to the rear, but for the rear fish to know how fast the leader fish is
+                flapping, along with a phase shift from a zero point in time of the leader's flapping so that the follower can synchronize its movement with the leader. We used a monocular camera on the follower fish to do this, which is what my work has been on. I wrote the computer vision software using OpenCV in Python to get these guidance parameters. With the follower fish flapping on a duty cycle
+                (it would coast and record video for one second, then flap for one second), this process was able to accurately find frequency of the leader fish to within 0.1 hz
+                (error could be improved with a longer recording window, but then the follower could not keep up with the leader), find phase shift accurately, and find distance accurate to within 1cm at a range of 70cm when compared with an ultrasonic sensor providing ground truth data.
+                recording video, and I'm still working on having it work with the follower constantly flapping so that it doesn't have to coast at all.
+            </center></td>
+            <td><center><img src="../images/fish.JPG" alt="fish" width = "300"/></center></td>
+            <td><center><video width="320" height="240" controls><source src="../images/cutDown.mp4" type="video/mp4"></video></center></td>
+        </tr>
+    </table></center>
+
+    
+    <h3><center>Balloon Payload Program</center></h3>
+    <center><img src="../images/group.jpg" alt="Bpp" width="600"/></center>
+    <p><center>I am a member of the Univeristy of Maryland Balloon Payload Program (BPP), a student-run club that launches high altitude weather balloons carrying various payloads.</center></p>
+    <h4><center>BPP Projects</center></h4>
+    <center><table class = "table1">
+        <tr>
+            <th><center>Pterodactyl</center></th>
+            <th><center>Inflation</center></th>
+            <th><center>Command</center></th>
+        </tr>
+        <tr>
+            <td><center><img src="../images/pterodactyl2.JPG" alt="Bpp"/></center></td>
+            <td><center><img src="../images/inflation.jpg" alt="Bpp"/></center></td>
+            <td><center><img src="../images/command.png" alt="Command"></center></td>
+        </tr>
+        <tr>
+            <td><center>I am the payload lead on Pterodactyl, a payload sent to the UMD BPP by the Nationwide Eclipse Ballooning Project (NEBP). The NEBP is a country-wide NASA-supported project that has gathered over 70 teams to launch scientific balloons during the 2023 and 2024 solar eclipses. 
+                Pterodactyl is a sensor suite designed by Montana State University that carries various atmospheric sensors (GPS, thermometer, accelerometer, magnetometer, and pressure sensor) with the goal of tracking atmospheric gravity waves across the country during the eclipse. Pictured
+                here is our first version of Pterodactyl after it was ran over by a car on landing. </center></td>
+            <td><center>During launches, I help out on the pad by filling balloons from high-pressure helium tanks. I train people on safe practice when moving tanks and on how to properly regulate helium flow into the balloon during inflation.</center></td>
+            <td><center>I am currently redesigning the structure of our Command payload which houses our main method of tracking our balloon. It sends GPS tracking data over the Automated Packet Reporting System (APRS), an amateur radio protocol that uses recievers all across the country to collect packets from 
+                devices and gather them onto publicly-available tracking websites like aprs.fi. The payload electronics are being redesigned, and in the process we as a club want to update the payload structure to be smaller, sturdier, and easier to maintain.</center></td>
+        </tr>
+    </table></center>
+    <br>
+    <h3><center>Fun Stuff</center></h3>
+    <p><center>A variety of stem-related personal projects.</center></p>
+    <center><table class = "table1">
+        <tr>
+            <th><center>Custom Electric Guitar</center></th>
+            <th><center>Kerbal Space Program Controller</center></th>
+        </tr>
+        <tr>
+            <td><center><img src="../images/guitar.jpg" alt="guitar"/></center></td>
+            <td><center><img src="../images/controller1.JPG" alt="controller"/></center></td>
+        </tr>
+        <tr>
+            <td><center> I modelled, laser-cut, and assembled this custom electric guitar out of sheets of purpleheart and red cedar wood. It was a really interesting challenge and was one of my first experiences with CAD/CAM beyond simple 3D printing. In addition to custom standard guitar electronics, it has a MIDI touchpad 
+                in the body of the guitar that can connect to an effects controller, allowing for precision control of various sound effects like high/low pass filters and overdrive. </center></td>
+            <td><center> I designed, machined, and wired a custom game controller for the spaceflight simulator Kerbal Space Program, using an Arduino to handle digital and analog inputs. Kerbal Space Program is a spaceflight simulator that 
+                allows you to design and fly custom rockets throuhg a solar system using patched-conic orbit approximation that provide a fairly accurate, though simplistic model of interplanetary spaceflight.
+                I've always been a huge fan of this game, and I thought it would be fun to have a large control panel for it inspired by Apollo-era NASA control panels. The top sheet is annodized aluminum with labels 
+                lasercut into the surface, and the rest of the case is high-density plastic. It has LEDs that will light up corresponding to specific in-game actions like lowering your landing gear or preparing to 
+                abort. It was a really fun project and a great way to get better at soldering and Arduino code.</center></td>
+        </tr>
+    </table></center>
+
+
+    <h4><center>Orbital Modeling in Matlab</center></h4>
+    <center><table class = "about">
+        <tr>
+            <td><center><video width="320" height="240" controls>
+                <source src="../images/3body.mp4" type="video/mp4"> </video>
+            </center></td>
+            <td><center><video width="320" height="240" controls>
+                <source src="../images/3d!.mp4" type="video/mp4"> </video>
+            </center></td>
+            <td><center><video width="320" height="240" controls>
+                <source src="../images/burn!!.mp4" type="video/mp4"></video>
+            </center></td>
+        </tr>
+        <tr>
+            <td><center>3 bodies propegated in 2D space</center></td>
+            <td><center>3 bodies propegated in 3D space</center></td>
+            <td><center>A satellite orbiting around a planet performing a maneuver after the first orbit</center></td>
+        </tr>
+    </table></center>
+    <center><table class = "table1">
+            <td><center>I've been working on modeling orbital simulations in Matlab, this started as a brief idea when I was bored on a Saturday and thought it might be fun to make a 2D n-body 
+                orbit propagator. Doing this in 2D didn't take me very long, so I modified it to work in 3D and realized that from here it likely wouldn't be that difficult to create a program
+                that can take Keplerian orbital elements and model the corresponding orbit. This only took a few days, so then I thought it might be fun to try to model orbital maneuvers (I wanted
+                to make something akin to Kerbal Space Program). I don't know if fun is the right word for this. Implementing maneuvers required an order of magnitude more effort than the other
+                tasks, but I got it working. The program allows you to create a parent body of a specific mass and then create satellites by inputing Keplerian orbital elements. Then, by calling a 
+                burn function for a specific satellite, you can input a delta-v vector and the satellite will change its orbit accordingly. Now that I'm able to model instantaneous velocity changes,
+                I have a few other goals in mind. First, I want to create a function that will calculate ideal transfer burns to go between orbits. Additionally, I want the simulation to be able to model
+                non-elliptical orbits, as currently it cannot handle anything going above escape velocity. Lastly, I think creating a function that can calculate rendevous burns would be a really fun 
+                challenge, but that's definitely a long ways away.
+            </center></td>
+    </table></center>
+    
+    <center><p>Contact Information</p></center>
+    <center><table class = "footer">
+        <tr>
+            <td><center>anthonyregli@gmail.com</center></td>
+            <td><center>linkedin.com/in/tregli</center></td>
+        </tr>
+    </table></center>
+    <center><p>Last Updated May 14, 2024</p></center> -->
+</html>
+

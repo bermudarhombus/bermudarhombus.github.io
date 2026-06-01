@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: DejavuCustom;
+  src: url("/fonts/DejaVuSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: DejavuCustom, Roboto, sans-serif;
+  font-style: normal;
+  margin: 0;
+  background: #f4f7fb;
+  color: #253238;
+}
+
+header {
+  color: #fff; /* change color of text */
+  padding: 10px 100px; /* first number is distance of text from top */
+  text-align: center;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #04AA6D;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #e8edf4;
+  font-size: 0.9rem;
+}
+
+
+
+ul.headerList {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;          /* small padding so edge items aren't flush */
+  background-color: #013145;
+  display: flex;
+  align-items: center;
+}
+
+ul.headerList li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+ul.headerList li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 24px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+ul.headerList li a:hover {
+  background-color: #cd102e;
+}
+
+ul.headerList li a.active {
+  background-color: #9b0a33;
+}
+

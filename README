@@ -1,1 +1,31 @@
 code for tonyregli.com, the best website in the universe
+Goals:
+Landing page with pictures
+About page
+Experience Tab
+    APL
+    Research
+    BPP
+Coursework Tab
+    Class overview
+
+
+Notes
+Class determines what css style to use
+title gives tootltip text
+<p class="class" title="temp"> text </p>
+
+Block vs inline,
+div, section, p: span entire width and start on new line (block elements)
+span, a, strong: only take necessary width
+
+Use only 1 <h1> per page
+
+<p> wraps paragraphs of text.
+<br> inserts a line break (use sparingly).
+<hr> draws thematic breaks between topics.
+
+<strong> - strong importance, typically bold.
+<em> - emphasized text, typically italic.
+<mark> - highlight; <code> - monospace code snippet.
+<abbr>, <cite>, <time> add meaning for readers and crawlers.
