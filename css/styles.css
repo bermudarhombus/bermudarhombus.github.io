@@ -51,6 +51,9 @@ footer {
 
 
 ul.headerList {
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
   font-size: 20px;
   margin: 0;
