@@ -44,6 +44,12 @@ section h1{
   margin: 0;
 }
 
+.homeH1{
+  color: #013145;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+
 .aboutH1{
   color: #013145;
   font-size: 1.5rem;
