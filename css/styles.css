@@ -8,8 +8,15 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: Montserrat;
+  src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: DejavuCustom, Roboto, sans-serif;
+  font-family: Montserrat, Roboto, sans-serif;
   font-style: normal;
   font-size: 20px;
   margin: 0;
@@ -25,13 +32,22 @@ header {
 }
 
 main {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px 20px;
 }
 
 section {
   background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.subsection {
+  margin-top: 30px;
+  background: #DDDDDD;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 24px;
@@ -58,7 +74,8 @@ section h1{
 }
 
 section h2 {
-  margin-top: 0;
+  margin-top: 3px;;
+  margin-bottom: 5px;
   font-size: 1.1rem;
   color: #013145;
 }
@@ -90,6 +107,13 @@ img{
   width: 40%;
 }
 
+.rightHalf p{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
 .rightHalf img{
   width:100%;
   height: auto;
@@ -101,6 +125,61 @@ img{
 }
 
 .leftHalf img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+.rightHalfClass{
+  width: 100%;
+}
+
+.rightHalfClass p{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+.rightHalfClass img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+.leftHalfClass{
+  width:70%;
+}
+
+.leftHalfClass img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.rightHalfClass2{
+  width: 70%;
+}
+
+.rightHalfClass2 p{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+.rightHalfClass2 img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+.leftHalfClass2{
+  width:100%;
+}
+
+.leftHalfClass2 img{
   width:100%;
   height:auto;
   display:block;
