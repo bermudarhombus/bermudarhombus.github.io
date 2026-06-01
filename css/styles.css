@@ -72,6 +72,12 @@ img{
   width: 55%;
 }
 
+.rightHalf img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+
 .leftHalf{
   width:40%;
 }
