@@ -17,8 +17,6 @@
 
 
 
-
-
 body {
   font-family: Montserrat, Roboto, sans-serif;
   font-style: normal;
@@ -83,6 +81,19 @@ section h1{
   margin: 20px;
 }
 
+h1 {
+  color: #013145;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 3px;;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #013145;
+}
+
 section h2 {
   margin-top: 3px;;
   margin-bottom: 5px;
@@ -117,6 +128,11 @@ img{
   width: 40%;
 }
 
+.rightHalf h1{
+  margin:0;
+}
+
+
 .rightHalf p{
   margin: 0;
   padding-bottom: 10px;
@@ -131,6 +147,10 @@ img{
 
 .leftHalf{
   width:50%;
+}
+
+.leftHalf h1{
+  margin: 0;
 }
 
 .leftHalf img{
@@ -148,7 +168,10 @@ img{
   margin: 0;
   text-align: center;
   padding-bottom: 10px;
+}
 
+.rightHalfClass h1{
+  margin: 0;
 }
 
 .rightHalfClass img{
@@ -159,6 +182,10 @@ img{
 
 .leftHalfClass{
   width:70%;
+}
+
+.leftHalfClass h1{
+  margin: 0;
 }
 
 .leftHalfClass img{
